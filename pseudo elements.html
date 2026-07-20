@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<head>
+    <title>My food menu</title>
+</head>
+<style>
+    body {
+        font-family: pacifico, lobster;
+        background-image: linear-gradient(yellow, rgb(235, 42, 74), rgb(231, 114, 19));
+        padding: 30px;
+        text-align: center;
+    }
+
+    h1 {
+        color: rgb(174, 39, 236)
+    }
+
+    h1+p {
+        background: white;
+        padding: 10px, 20px;
+        color: grey;
+        display: inline-block;
+    }
+
+    ul>li {
+        list-style: none;
+        font-size: 25px;
+        font-weight: bold;
+        color: darkgreen;
+        padding: 10px, 20px;
+        margin: auto;
+        width: 260px;
+        background: black;
+        border-radius: 8px;
+
+    }
+
+    ul li:nth-child(4) {
+        background-color: rgb(240, 11, 11);
+         color: lightblue;
+    }
+      ul li:nth-child(2) {
+        background-color: rgb(235, 18, 18);
+         color: lightblue;
+    }
+
+    .desc {
+        color: rgb(6, 7, 7);
+        margin: 20px;
+        font-size: 15px;
+        max-width: 400px;
+        margin: auto;
+    }
+
+    .links{
+        margin-top: 25px;}
+    
+    
+    .desc::first-letter {font-size: 28px;
+        color: orange;
+        font-weight: bold;
+        color: red;}
+        
+        
+a{
+    color: rgb(15, 2, 27);
+    text-decoration: none;
+    margin: 0px  12px;
+    padding: 8px  18px; 
+    border: 2px solid black;
+     border-radius: 8px; }
+
+     a:hover{
+        background-color: rgb(6, 6, 136);
+     }
+</style>
+
+<body>
+    <strong>
+        <h1>What I would put on my food menu</h1><br>
+    </strong>
+
+    <p>Which of my favourite foods would you prefer - be sure to pick one of the four or try all of them eventually</p>
+    <ul>
+        <li>Ramen Noodles</li>
+        <li>Fried Chicken</li>
+        <li>Rice</li>
+        <li>Maybe your favourite traditional dish</li>
+    </ul>
+
+    <p class="desc">Every dish is unique and fantastical made by many different chefs all over the world, with love and
+        determination poured into the making of each singular crumb.</p>
+
+    <div class="links">
+        <a href="#">Order Now></a>
+        <a href="#">See now></a>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+body{background-color: aquamarine;
+background-position: top center;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+
+.page-header{border-radius: 16px;
+text-align: center;
+color: blue;
+background-image: linear-gradient( to right,rgb(6, 90, 6), rgb(12, 153, 42), rgb(10, 233, 121));}
+
+.fact-card{background-color: coral;
+border-radius: 12px;
+color:rgb(8, 8, 8)}
+
+
+.fact-card h2{ color: rgb(24, 137, 212);}
+
+.star{width: 500px;
+height: 500px;
+background-color: yellow;
+border-radius: 50%;
+animation: spin 2s infinite alternate;}
+
+@keyframes spin{
+    from {background-color: rgb(236, 19, 19);}
+    50% {background-color: rgb(243, 65, 11);}
+    to {background-color: rgb(233, 236, 13);}
+}
