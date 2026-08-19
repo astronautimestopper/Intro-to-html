@@ -3,6 +3,38 @@
 <html>
 
 <head>
+  <style>
+
+    body{
+      background-image: linear-gradient(to right, darkgreen, rgb(8, 8, 83), rgb(226, 226, 89));
+      font-family: comfortaa, sans-serif;
+      margin: 21px;
+      width: 80%;
+      padding:19px;
+      position: relative;}
+     
+      .slide-forest{
+        background-color: rgb(8, 110, 25);
+
+      }
+      .slide-ocean{
+        background-color: rgb(18, 8, 160);
+      }
+      .slide-desert{
+        background-color: rgb(96, 121, 5);
+      }
+
+    .safari-slide{
+      height: 200px;
+      color: white;
+      font-size: 15px;
+      text-align: center;
+ 
+      padding-top: 75px;
+    }
+      
+    
+    </style>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     
 </head>
@@ -16,13 +48,16 @@
 <li data-target="#safariCarousel" data-slide-to="2"></li>
 </ol>
 <div class="carousel-inner">
-   <div class="carousel-item active safari-slide slide-forest"> Forest safar 
-     <div class="carousel-item active safari-slide slide-ocean"> Ocean safari 
-    <div class="carousel-item active safari-slide slide-desert"> Desert safari
+   <div class="carousel-item active safari-slide slide-forest">Forest safari</div>
+     <div class="carousel-item  safari-slide slide-ocean">Ocean safari</div>
+    <div class="carousel-item  safari-slide slide-desert">Desert safari</div>
     </div>
-  <a class="carousel-control-prev" href="#safariCarousel" data-slide prev>
-    <span class="carousel-control-prev-icon"></span>
-    <a class="carousel-control-next" href="#safariCarousel" data-slide prev>
-        <span class="carousel-control-next-icon"></span>
+  <a class="carousel-control-prev" href="#safariCarousel" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span></a>
+    <a class="carousel-control-next" href="#safariCarousel" data-slide="prev">
+        <span class="carousel-control-next-icon"></span></a>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
