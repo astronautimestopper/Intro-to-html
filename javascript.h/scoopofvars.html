@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scoop of Variables</title>
+</head>
+      <body>
+     <p>A function can access variables defined inside the function</p>
+
+     <button type="button" onclick="myfunction()">Click Me!!!</button>
+     <p id="demo"></p>
+     <p id="demo1"></p>
+
+     <script>
+        var b=5;
+    function myfunction(){
+
+    
+        var a=4;
+        document.write(a*b)
+        document.getElementById("demo").innerHTML=a*b;
+    }
+     </script>
+      </body>
+</html>
+
+
