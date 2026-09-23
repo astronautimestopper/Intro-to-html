@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Error alerts in Javascript</title>
+    </head>
+    <body>
+        <p id="error_warning"></p>
+        <script>
+            try{
+                alert("error");
+        }
+           catch(err){
+                document.getElementById("error_warning").innerHTML = err.message;
+            }
+
+            
+        </script>
+    </body>
+</html>
