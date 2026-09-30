@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1> My delivery tracker</h1>
+        <button onclick = "saveOrder()">Save order</button>
+        <button onclick= "startDelivery()"> Start delivery</button>
+        
+        <div>JSON text: <span id="json-text"></span></div>
+        <div>Loaded Item: <span id="loaded-item"></span></div>
+        <div>Loaded Price: <span id="loaded-price"></span></div>
+        <div>Status: <span id="status"></span></div>
+        <div>Result: <span id="result"></span></div>
+
+        <script>
+        let order = {
+            item: "Pizza",
+            price: 4.60,
+            shop: "Dominos"
+        };
+        
+        function saveOrder(){
+         let jsonText = JSON.stringify(order);
+         let loadedItem = JSON.parse(jsonText);
+         
+
+        document.getELementById("json-text").innerHTML = jsonText;
+        document.getELementById("loaded-item").innerHTML =loadedItem.item;
+        document.getELementById("loaded-price").innerHTML = "£" + loadedItem.price;
+        }
+        
+
+        
+        </script>
+    </body>
+</html>
