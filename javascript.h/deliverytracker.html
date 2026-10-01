@@ -27,8 +27,27 @@
         document.getElementById("loaded-item").innerHTML =loadedItem.item;
         document.getElementById("loaded-price").innerHTML = "£" + loadedItem.price;
         }
-        
 
+      function delay(ms){
+        return new Promise(function(resolve){
+            setTimeout(resolve,ms);
+        })
+      }
+
+      async function startDelivery(){
+        document.getElementById("result").innerHTML = "";
+      }
+     
+      document.getElementById("status").innerHTML = "Order Received";
+      setTimeout(function(){
+        document.getElementById("status").innerHTML = "Kitchen is preparing...";},1000
+         
+      );
+      await delay(3000);
+      document.getElementById("status").innerHTML = "Out of delivery"
+
+      await delay(2000);
+      document.getElementById("result").innerHTML = "Your order has arrived"
         
         </script>
     </body>
