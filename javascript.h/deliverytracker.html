@@ -36,7 +36,7 @@
 
       async function startDelivery(){
         document.getElementById("result").innerHTML = "";
-      }
+      
      
       document.getElementById("status").innerHTML = "Order Received";
       setTimeout(function(){
@@ -44,11 +44,11 @@
          
       );
       await delay(3000);
-      document.getElementById("status").innerHTML = "Out of delivery"
+      document.getElementById("status").innerHTML = "Out of delivery";
 
       await delay(2000);
-      document.getElementById("result").innerHTML = "Your order has arrived"
-        
+      document.getElementById("result").innerHTML = "Your order has arrived";
+      }
         </script>
     </body>
 </html>
