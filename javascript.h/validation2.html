@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>Please enter a number then select the <strong>OK</strong> button</p>
+        <input id = "inputstuff" type = "number" min = "100" max = "1000" required>
+        <button onclick = "myFunction()">OK</button>
+        <p>If number is less than 100 or greater than 1000, an error message will be displayed.</p>
+        <p id = "result"></p>
+        <script>
+            function myFunction(){
+                var inpObj = document.getElementById("inputstuff")
+                if (!inpObj.checkValidity()){
+                    document.getElementById("result").innerHTML = inpObj.validationMessage;
+                }
+                else{
+                    document.getElementById("result").innerHTML = " input OK";
+                }
+            }
+        </script>
+    </body>
+</html>
