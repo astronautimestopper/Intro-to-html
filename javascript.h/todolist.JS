@@ -1,19 +1,19 @@
 var Form = document.getElementById("myForm");
-var Input = document.getElementByID("myInput");
+var Input = document.getElementById("myInput");
 var Item = document.getElementById("myItem");
 
 Form.addEventListener("submit",
     function(event){
-       event.PreventDefault()
+       event.preventDefault()
        createItem(Input.value)
  }
 
 )
 
 function createItem(inputItem){
-    var Item = `<li> ${inputItem}
-    <button onclick="deleteElement(this)>Delete</button> </li>`
-    Item.insertAdjacent("beforeend", Item)
+    var items = `<li> ${inputItem}
+    <button onclick="deleteElement(this)">Delete</button> </li>`
+    Item.insertAdjacentHTML("beforeend", items)
     Input.value = ""
     Input.focus()
 
