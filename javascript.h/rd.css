@@ -1,12 +1,12 @@
 body{
     font-family: arial, sans-serif;
     background-color: rgb(240, 179, 13);
-    text-align: center
+    text-align: center;
 }
  
 #dice{
     font-size: 280px;
-    color: rgb(143, 7, 235)
+    color: rgb(143, 7, 235);
 }
 
 #dice:hover{
