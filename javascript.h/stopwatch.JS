@@ -7,7 +7,7 @@ var buttonStart = document.getElementById("button-start");
 var buttonStop = document.getElementById("button-stop");
 var buttonReset = document.getElementById("button-reset");
 var Interval
-}
+
 
 buttonStart.onclick = function(){
 
@@ -20,12 +20,11 @@ buttonStop.onclick = function(){
 }
 
 buttonReset.onclick = function(){
-    
-    clearInterval(Interval);
+        clearInterval(Interval);
     milliseconds = "00";
     seconds  ="00";
-    appendmilliseconds.innerHTML = "milliseconds"
-    appendseconds.innerHTML = "seconds"
+    appendmilliseconds.innerHTML = "00"
+    appendseconds.innerHTML = "00"
     
 }
 
@@ -53,5 +52,5 @@ function startTimer(){
         appendseconds.innerHTML + seconds;
     }
 
-    
+    }
 }
